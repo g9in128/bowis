@@ -12,8 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel = "stylesheet" href = "base.css">
-    <link rel = "stylesheet" href = "signin.css">
+    <link rel = "stylesheet" href = "static/css/base.css">
+    <link rel = "stylesheet" href = "static/css/signin.css">
 </head>
 <body>
     <div class = "signin_board"></div>
