@@ -15,8 +15,11 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'compile('javax.servlet:jstl')
-    compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// -- jsp --
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'javax.servlet:jstl'
 }
 
 tasks.named('test') {
