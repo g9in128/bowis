@@ -4,12 +4,22 @@ body {
 
 input {
     all : unset;
+    cursor : text;
+}
+
+div {
+	cursor: default;
+}
+
+a {
+	text-decoration: none;
 }
 
 .btn {
     background-color: #092a63;
     color: #fff;
     font-weight: bold;
+	cursor: pointer;
 }
 
 
@@ -41,4 +51,5 @@ input {
 .link:hover {
     color: #555;
     text-decoration: underline;
+    font-weight: bold;
 }
