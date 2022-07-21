@@ -1,20 +1,24 @@
 package com.bowis.home.model;
 
-//create table member (
-//		memberNum int primary key,
-//	    memberId varchar(25) not null,
-//	    password varchar(25) not null,
-//	    salt char(10) not null,
-//	    name varchar(25) not null,
-//	    monE int not null,
-//	    image varchar(16) not null
-//	);
+//CREATE TABLE `member` (
+//		  `memberNum` int NOT NULL,
+//		  `email` varchar(40) NOT NULL,
+//		  `memberId` varchar(25) NOT NULL,
+//		  `password` varchar(25) NOT NULL,
+//		  `salt` char(10) NOT NULL,
+//		  `name` varchar(25) NOT NULL,
+//		  `monE` int NOT NULL,
+//		  `image` varchar(16) NOT NULL,
+//		  PRIMARY KEY (`memberNum`,`email`)
+//) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 import lombok.Data;
 
 @Data
 public class MemberDTO {
 	int memberNum;
+	String email;
 	String memberId;
 	String password;
 	String salt;

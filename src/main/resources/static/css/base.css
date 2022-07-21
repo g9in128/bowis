@@ -20,12 +20,13 @@ a {
     color: #fff;
     font-weight: bold;
 	cursor: pointer;
+	padding : 2px 5px 2px 5px;
+	border-radius: 5px;
 }
 
 
 .btn:hover {
-    font-weight: 900;
-    font-size : 110%
+	color : #ff0;
 }
 
 .title {
@@ -52,4 +53,21 @@ a {
     color: #555;
     text-decoration: underline;
     font-weight: bold;
+}
+
+.input {
+    margin: 2px;
+    background-color: #fff;
+    height: 40px;
+    width: 260px;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.profile_image {
+	width : 80px;
+	height : 80px;
+	border-radius: 10px;
+	object-fit : cover;
 }

@@ -9,6 +9,26 @@
     <link rel = "stylesheet" href = "static/css/signin.css">
 </head>
 <body>
-    <div class = "signin_board"
+    <div class = "signin_board">
+    <div class = "title">Bowis</div>
+    <form id = "signin">
+    	<img id = "preview_img" class = "profile_image" th:src = "${profile}">
+    	<input type = "hidden" name = "default_profile" >
+    	<div id = "img_btn" class = "btn">
+    		<input type = "file" name = "image" class = "image_input" accept="image/*">
+    		Image
+    	</div>
+    	<input type = "email" placeholder="Email" name = "email" class = "input">
+    	<input type = "password" placeholder="Password" name = "password" class = "input">
+    	<input type = "text" placeholder="Id" name = "memberId" class = "input">
+    	<input type = "text" placeholder="Name" name = "name" class = "input">
+    	<input type = "submit" value = "signin" class = "btn">
+    	<div class = "links">
+    		<a class = "link" th:href = "@{/login}">로그인</a>
+    	</div>
+    </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" th:src=@{static/js/signin.js}></script>
 </body>
 </html>
