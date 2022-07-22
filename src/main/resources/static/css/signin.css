@@ -30,12 +30,16 @@ body {
 }
 
 #signin .btn {
-    margin-bottom	: 20px;
+    margin-bottom	: 10px;
     height: 35px;
     width: 250px;
     text-align: center;
     border-radius: 5px;
     font-size: 20px
+}
+
+#signin .links {
+	margin-top: 10px
 }
 
 #signin #img_btn {

@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel = "stylesheet" href = "static/css/base.css">
-    <link rel = "stylesheet" href = "static/css/signin.css">
+    <link rel = "stylesheet" href = "css/base.css">
+    <link rel = "stylesheet" href = "css/signin.css">
 </head>
 <body>
     <div class = "signin_board">
     <div class = "title">Bowis</div>
-    <form id = "signin">
+    <form id = "signin" method = "post" enctype="multipart/form-data">
     	<img id = "preview_img" class = "profile_image" th:src = "${profile}">
-    	<input type = "hidden" name = "default_profile" >
+    	<input type = "hidden" name = "default_profile" th:value = "${profile}">
     	<div id = "img_btn" class = "btn">
     		<input type = "file" name = "image" class = "image_input" accept="image/*">
     		Image
     	</div>
-    	<input type = "email" placeholder="Email" name = "email" class = "input">
-    	<input type = "password" placeholder="Password" name = "password" class = "input">
-    	<input type = "text" placeholder="Id" name = "memberId" class = "input">
-    	<input type = "text" placeholder="Name" name = "name" class = "input">
+    	<input type = "email" placeholder="Email" name = "email" class = "input" required>
+    	<input type = "password" placeholder="Password" name = "password" id = "password" class = "input" required>
+    	<input type = "password" placeholder="Password Confirm" id = "password_confirm" class = "input" required>
+    	<input type = "text" placeholder="Id" name = "memberId" class = "input" required>
+    	<input type = "text" placeholder="Name" name = "name" class = "input" required>
     	<input type = "submit" value = "signin" class = "btn">
+    	<span class = "message" th:text = "${message}"></span>
     	<div class = "links">
     		<a class = "link" th:href = "@{/login}">로그인</a>
     	</div>
     </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" th:src=@{static/js/signin.js}></script>
+	<script type="text/javascript" th:src=@{js/signin.js}></script>
 </body>
 </html>

@@ -13,3 +13,16 @@ $("input.image_input").on('change',e => {
 	}
 	
 });
+
+$("#signin").on("submit",e => {
+	e.preventDefault()
+	const passwd = $(e.target).find("#password").val()
+	const confirm = $(e.target).find("#password_confirm").val()
+	
+	if (passwd == confirm) {
+		e.target.submit()
+	}else {
+		$(".message").text("비밀번호가 서로 맞지 않습니다.")
+	}
+	
+});

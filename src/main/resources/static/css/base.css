@@ -71,3 +71,10 @@ a {
 	border-radius: 10px;
 	object-fit : cover;
 }
+
+.message {
+	color : red;
+	font-weight: bold;
+	margin: 2px 0 2px 0;
+	font-size: 13px;
+}
