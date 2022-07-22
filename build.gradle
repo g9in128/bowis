@@ -16,11 +16,32 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.7.1'
-	
+	implementation 'org.springframework.boot:spring-boot-devtools:2.7.1'
+
 	// thymeleaf
 	implementation group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.0.15.RELEASE'
-
+	
+	// mybatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+	// mysql-connector-java
+	implementation 'mysql:mysql-connector-java:8.0.29'
+	
+	//lombok 
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+	
+	//webjar
+	implementation 'org.webjars.npm:jquery:3.6.0'
+	
+	// commons-io
+	implementation 'commons-io:commons-io:2.11.0'
+	
+	// validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.7.0'
+	
+	// jbcrypt
+	implementation 'org.mindrot:jbcrypt:0.4'
+	
 }
 
 tasks.named('test') {
